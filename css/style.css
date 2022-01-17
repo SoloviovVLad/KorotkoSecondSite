@@ -492,6 +492,7 @@ main {
 .second-block__content-wrapper__description {
   transform: translateX(-100%);
   opacity: 0;
+  overflow: hidden;
 }
 
 .second-block__content-wrapper__description__text {
@@ -569,11 +570,13 @@ main {
   transform: scaleY(0) !important;
   transition: transform .5s;
   height: 0;
+  position: absolute;
 }
 
 .second-block__content-wrapper__description__text--after-btn--open {
   transform: scaleY(1) !important;
   height: 100%;
+  position: static;
 }
 
 .seventh-block,
